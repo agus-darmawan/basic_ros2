@@ -18,4 +18,12 @@ INSTALL(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+add_executable(topic_subscriber src/cpp_sub_node.cpp)
+ament_target_dependencies(topic_subscriber rclcpp example_interfaces)
+
+INSTALL(TARGETS
+  topic_subscriber
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()
