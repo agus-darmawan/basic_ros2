@@ -21,6 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
         'py_srv_server_node = learn_py_service.py_service_server_node:main',
+        'py_srv_client_node = learn_py_service.py_service_client:main',
+        'py_srv_client_node_no_oop = learn_py_service.py_service_client_no_oop:main'
         ],
     },
 )
