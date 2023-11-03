@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "py_pub_node = learn_py_topic.py_pub_node:main",
+            "py_sub_node = learn_py_topic.py_sub_node:main"
         ],
     },
 )
