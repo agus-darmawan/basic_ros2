@@ -12,8 +12,16 @@ find_package(rclcpp REQUIRED)
 add_executable(cpp_node src/cpp_test_node.cpp)
 ament_target_dependencies(cpp_node rclcpp)
 
+add_executable(cpp_node_oop src/cpp_test_node_oop.cpp)
+ament_target_dependencies(cpp_node_oop rclcpp)
+
 INSTALL(TARGETS
   cpp_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+INSTALL(TARGETS
+  cpp_node_oop
   DESTINATION lib/${PROJECT_NAME}
 )
 
