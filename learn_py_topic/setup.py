@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "py_pub_node = learn_py_topic.py_pub_node:main",
         ],
     },
 )
